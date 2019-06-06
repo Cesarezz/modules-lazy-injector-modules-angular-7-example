@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "customer-app": {
+    "modules-lazy-injector-modules-angular-7-example": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/customer-app",
+            "outputPath": "dist/modules-lazy-injector-modules-angular-7-example",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "customer-app:build"
+            "browserTarget": "modules-lazy-injector-modules-angular-7-example:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "customer-app:build:production"
+              "browserTarget": "modules-lazy-injector-modules-angular-7-example:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "customer-app:build"
+            "browserTarget": "modules-lazy-injector-modules-angular-7-example:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "customer-app-e2e": {
+    "modules-lazy-injector-modules-angular-7-example-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "customer-app:serve"
+            "devServerTarget": "modules-lazy-injector-modules-angular-7-example:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "customer-app:serve:production"
+              "devServerTarget": "modules-lazy-injector-modules-angular-7-example:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "customer-app"
+  "defaultProject": "modules-lazy-injector-modules-angular-7-example"
 }
